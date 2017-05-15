@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Home Page //
 app.get('/', (req, res) => {
-    res.send('I am a little teapot.')
+    res.sendFile('./public.index.html')
 });
 
 // Recent Searches //
