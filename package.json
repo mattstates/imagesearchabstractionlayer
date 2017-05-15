@@ -1,0 +1,32 @@
+{
+  "name": "imagesearchabstractionlayer",
+  "version": "1.0.0",
+  "description": "An image search abstraction layer app for freecodecamp's back end curriculum.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattstates/imagesearchabstractionlayer.git"
+  },
+  "keywords": [
+    "freecodecamp",
+    "node.js"
+  ],
+  "author": "Matt States",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattstates/imagesearchabstractionlayer/issues"
+  },
+  "homepage": "https://github.com/mattstates/imagesearchabstractionlayer#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "googleapis": "^19.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Search Abstraction Layer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="text-center">Image Search Abstraction Layer</h1>
+
+                <h4>Search for Images</h4>
+                <p>
+                    Get an array of the search strings since the app last restarted.<br> ENDPOINT: <code>/api/YOURSEARCHTERMS[?offset=PAGENUMBER]</code><br>                    EXAMPLE: <code>~/api/Roger Federer?offset=2</code>
+                </p>
+                <pre>
+            <samp>
+[
+    {
+        title: "Boris Beckers Loblied auf Roger Federer - Blick",
+        link: "https://f3.blick.ch/img/aktuell/origs1002455/9175568768-w644-h429/Federer-Alle-Titel-in-Bildern.jpg",
+        displayLink: "www.blick.ch"
+    },
+    {
+        title: "Tennis | Roger Federer: "20 grand slams... it's a dream, why not ...",
+        link: "http://as00.epimg.net/en/imagenes/2017/02/28/other_sports/1488283919_663588_noticia_normal.jpg",
+        displayLink: "en.as.com"
+    },
+    {
+        title: "Roger Federer exclusive interview: Tennis great on how he remains ...",
+        link: "http://www.telegraph.co.uk/content/dam/sport/2017/05/09/PR_FEDERER_PR6_cadree-large_trans_NvBQzQNjv4BqWZZ9520Qrn8RyVs0byqFf0WV-IQj12YThGduh-A9xgk.jpg",
+        displayLink: "www.telegraph.co.uk"
+    },
+    ...
+]
+            </samp>
+                </pre>
+                <h4>See Recent Search Strings</h4>
+                <p>
+                    Get an array of the search strings since the app last restarted.<br>
+                    <code>/recent</code>
+                </p>
+                <pre>
+            <samp>
+{
+    numberOfSearchesSinceAppRestart: 4,
+    recentSearchTerms: [
+        "Roger Federer",
+        "Alan Turing",
+        "lol catz",
+        "freecodecamp"
+    ]
+}
+            </samp>
+                </pre>
+                <blockquote>
+                    <p>Read more about this project here. <a href="https://www.freecodecamp.com/challenges/image-search-abstraction-layer"
+                            target="_new">https://www.freecodecamp.com/challenges/image-search-abstraction-layer</a></p>
+                    <p>
+                        Check out the code for this project here. <a href="https://github.com/mattstates/imagesearchabstractionlayer"
+                            target="_new">https://github.com/mattstates/imagesearchabstractionlayer</a></p>
+                </blockquote>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+
+        <div class="footer text-center"><a href="https://github.com/mattstates/">Matt States</a> &copy;2017</div>
+    </div>
+</body>
+</html>
